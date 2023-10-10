@@ -1,0 +1,19 @@
+header {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+body {
+
+}
+#items {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly
+}
+#item-1 #item-2 #item-3 {
+    height: 50px;
+    width: 100px;
+    border: 1px solid black;
+}
