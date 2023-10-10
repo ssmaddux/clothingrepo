@@ -1,0 +1,68 @@
+header {
+    text-align: center;
+    height: 150px;
+    border: 2px solid black;
+    margin: 10px, 5px, 15px, 5px;
+    
+}
+#item-types{
+    height: 50px;
+    width: 100px;
+    border: 1px solid black;
+}
+.items {
+    border: 2px solid red;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.item-types {
+    border: 1px solid black;
+    width: 200px;
+}
+/*this is making the nav being next to eachother*/
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+  
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+}
+/* Style the input field */
+#inp-word {
+    padding: 10px; 
+    border-radius: 5px; 
+    margin-right: 10px;
+    margin-top: 20px;
+}
+  
+/* Style the search button */
+#search-btn {
+    background-color: #007bff;
+    color: white;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+/* Add hover effect for the button */
+#search-btn:hover {
+    background-color: #0056b3; /* Changing background color on hover */
+}
