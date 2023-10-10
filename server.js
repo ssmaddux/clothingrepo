@@ -1,12 +1,13 @@
 const express = require('express')
 const cors = require('cors')
 const PORT = process.env.PORT || 3001
+const db = require('./db')
 const bodyParser = require('body-parser')
 
 // include controller name and path here
-// const affiliationController = require('./controllers/affiliations.js')
-// const villainController = require('./controllers/villains.js')
-// const heroController = require('./controllers/heros.js')
+const pantController = require('./controllers/pants.js')
+const shirtController = require('./controllers/shirts')
+const shortController = require('./controllers/shorts')
 
 
 const app = express()
@@ -17,6 +18,21 @@ app.use(express.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
 
+app.get('/pants', pantController.getAllPants)
+// app.get('/shirts', shirtController.getAll)
+// app.get('/shorts', shortController.getAll)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -24,10 +40,6 @@ app.use(bodyParser.json())
 app.get('/', (req, res) => {
     res.send('This is root!!')
   })
-
-
-
-
 
 app.listen(PORT, () => {
     console.log(`Express server listening on port ${PORT}`)
