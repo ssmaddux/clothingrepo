@@ -1,8 +1,8 @@
-
+const btn = document.getElementById("search-btn");
 
 
 btn.addEventListener("click", async () => {
-    const dicUrlApi = "https://api.dictionaryapi.dev/api/v2/entries/en/";
+    const clothingApi = "http://localhost:3001/home";
     
     // Gets the value (char) of the input
     const inpWord = document.getElementById("inp-word").value.toLowerCase();
@@ -10,23 +10,16 @@ btn.addEventListener("click", async () => {
 
     try {
         // Make the API request
-        let response = await axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${inpWord}`);
+        let response = await axios.get(`http://localhost:3001/${inpWord}`);
         const wordData = response.data[0];
         console.log(wordData)
         console.log(response)
 
-
     // Error message
     } catch (error) {
         // Show an error message in a popup
-        alert(`Error: Word was not found in dictionary API/database! Please re-enter a valid term!`);
+        alert(`Error: Item was not found in our database! Please re-enter a valid item!`);
         wordName.innerHTML = ``
-        pos.innerHTML = ``
-        phonetic.innerHTML = ``
-        ex.innerHTML = ``
-        def.innerHTML = ``
-        dicDefaultImage.innerHTML = ``
-        toggleButton.style.display = "none";
-        wordPronunciation.style.display = "none"; // Make image invisable if none exist
+        toggleButton.style.display = "none"; // Make image invisable if none exist
     }
 });
