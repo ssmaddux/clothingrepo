@@ -1,0 +1,11 @@
+header {
+    text-align: center;
+    height: 300px;
+    border: 2px solid black;
+    
+}
+#item-types{
+    height: 50px;
+    width: 100px;
+    border: 1px solid black;
+}
