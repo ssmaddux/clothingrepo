@@ -15,7 +15,6 @@ btn.addEventListener("click", async () => {
         console.log(wordData)
         console.log(response)
 
-
     // Error message
     } catch (error) {
         // Show an error message in a popup
