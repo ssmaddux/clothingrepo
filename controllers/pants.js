@@ -14,7 +14,7 @@ async function getOnePant(req, res) {
         const id = req.params.id
         const pant = await Pant.findById(id)
         if (pant) {
-            return res.json(Pant)
+            return res.json(pant)
         }
         return res.status(404).send('Pant with this id doesnt exist')
     } catch (error) {

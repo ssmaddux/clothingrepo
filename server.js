@@ -22,8 +22,22 @@ app.get('/pants', pantController.getAllPants)
 // app.get('/shirts', shirtController.getAll)
 // app.get('/shorts', shortController.getAll)
 
+app.get('/pants/:id', pantController.getOnePant)
+// app.get('/villains/:id', villainController.getOneVillain)
+// app.get('/heros/:id', heroController.getOneHero)
 
 
+app.post('/pants', pantController.createPant)
+// app.post('/villains', villainController.createVillain)
+// app.post('/heros', heroController.createHero)
+
+app.put('/pants/:id', pantController.updatePant)
+// app.put('/villains/:id', villainController.updateVillain)
+// app.put('/heros/:id', heroController.updateHero)
+
+app.delete('/pants/:id', pantController.deletePant)
+// app.delete('/villains/:id', villainController.deleteVillain)
+// app.delete('/heros/:id', heroController.deleteHero)
 
 
 
