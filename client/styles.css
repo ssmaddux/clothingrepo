@@ -11,7 +11,7 @@ header {
     border: 1px solid black;
 }
 .items {
-    border: 2px solid red;
+    /*border: 2px solid red;*/
     height: 300px;
     display: flex;
     justify-content: space-around;
@@ -73,8 +73,9 @@ footer {
     background-color: #0056b3;
     width: 100%;
     left: 0;
-    height: 100px;
-    padding: 5px
+    height: 60px;
+    padding: 5px;
+    text-align: center;
 }
 #pants {
     background-image: url('https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/459707/sub/goods_459707_sub13.jpg?width=750');
@@ -87,4 +88,11 @@ footer {
 #shirts {
     background-image:url('//u-mercari-images.mercdn.net/photos/m15938459770_1.jpg?width=3840&quality=75&format=pjpg&auto=webp&_=1675468513');
     background-size: cover;
+}
+#itemDisplay {
+    width: 300px;
+    height: 600px;
+}
+#itemDescription {
+    height: 400px;
 }
