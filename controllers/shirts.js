@@ -1,33 +1,33 @@
-const { Pant }  = require('../models');
+const { Shirt }  = require('../models');
 
-const getAllPants = async (req, res) => {
+const getAllShirts = async (req, res) => {
     try {
-        const pants = await Pant.find()
-        res.json(pants)
+        const shirts = await Shirt.find()
+        res.json(shirts)
     } catch (error) {
         return res.status(500).send(error.message);
     }
 }
 
-async function getOnePant(req, res) {
+async function getOneShirt(req, res) {
     try {
         const id = req.params.id
-        const pant = await Pant.findById(id)
-        if (pant) {
-            return res.json(pant)
+        const shirt = await Shirt.findById(id)
+        if (shirt) {
+            return res.json(shirt)
         }
-        return res.status(404).send('Pant with this id doesnt exist')
+        return res.status(404).send('Shirt with this id doesnt exist')
     } catch (error) {
         return res.status(500).send(error.message)
     }
 }
 
-async function createPant(req,res) {
+async function createShirt(req,res) {
     try {
-        const pant = await new Pant (req.body)
-        await pant.save()
+        const shirt = await new Shirt (req.body)
+        await shirt.save()
         return res.status(201).json({
-            pant
+            shirt
         })
     } catch (e) {
         return res.status(500).json({error: e.message})
@@ -35,27 +35,27 @@ async function createPant(req,res) {
 }
 
 
-async function updatePant(req,res) {
+async function updateShirt(req,res) {
     try {
         const id = req.params.id
-        const pant = await Pant.findByIdAndUpdate(id, req.body, {new: true})
-        if (pant) {
-            return res.status(200).json(pant)
+        const shirt = await Shirt.findByIdAndUpdate(id, req.body, {new: true})
+        if (shirt) {
+            return res.status(200).json(Shirt)
         }
-        throw new Error('Pant not found')
+        throw new Error('Shirt not found')
     } catch (e) {
         return res.status(500).json({error: e.message})
     }
 }
 
-async function deletePant(req,res) {
+async function deleteShirt(req,res) {
     try {
         const id = req.params.id
-        const pant =  await Pant.findByIdAndDelete(id)
-        if (pant) {
-            return res.status(200).json(Pant)
+        const shirt =  await Shirt.findByIdAndDelete(id)
+        if (shirt) {
+            return res.status(200).json(Shirt)
         }
-        throw new Error('Pant not found')
+        throw new Error('Shirt not found')
     } catch (e) {
         return res.status(500).json({error: e.message})
     }
@@ -63,9 +63,9 @@ async function deletePant(req,res) {
 
 
 module.exports = {
-    getAllPants,
-    getOnePant,
-    createPant,
-    updatePant,
-    deletePant
+    getAllShirts,
+    getOneShirt,
+    createShirt,
+    updateShirt,
+    deleteShirt
 }
