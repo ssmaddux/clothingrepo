@@ -66,3 +66,12 @@ nav a {
 #search-btn:hover {
     background-color: #0056b3; /* Changing background color on hover */
 }
+footer {
+    bottom: 0;
+    position: fixed;
+    background-color: #0056b3;
+    width: 100%;
+    left: 0;
+    height: 100px;
+    padding: 5px
+}
