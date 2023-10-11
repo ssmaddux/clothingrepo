@@ -12,14 +12,15 @@ header {
 }
 .items {
     border: 2px solid red;
-    height: 100px;
+    height: 300px;
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
 }
 .item-types {
     border: 1px solid black;
-    width: 200px;
+    width: 300px;
+    height: 300px;
 }
 /*this is making the nav being next to eachother*/
 nav {
@@ -74,4 +75,12 @@ footer {
     left: 0;
     height: 100px;
     padding: 5px
+}
+#box1 {
+    background-image: url('https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/459707/sub/goods_459707_sub13.jpg?width=750');
+    background-size: cover;
+}
+#box2 {
+    background-image: url('https://itizen-production.s3.amazonaws.com/uploads/image_asset/image/20402711/item-image-0.jpg');
+    background-size: cover;
 }
