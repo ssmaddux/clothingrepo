@@ -19,35 +19,25 @@ app.use(bodyParser.json())
 
 
 app.get('/pants', pantController.getAllPants)
-// app.get('/shirts', shirtController.getAll)
-// app.get('/shorts', shortController.getAll)
+app.get('/shirts', shirtController.getAllShirts)
+app.get('/shorts', shortController.getAllShorts)
 
 app.get('/pants/:id', pantController.getOnePant)
-// app.get('/villains/:id', villainController.getOneVillain)
-// app.get('/heros/:id', heroController.getOneHero)
+app.get('/shirts/:id', shirtController.getOneShirt)
+app.get('/shorts/:id', shortController.getOneShort)
 
 
 app.post('/pants', pantController.createPant)
-// app.post('/villains', villainController.createVillain)
-// app.post('/heros', heroController.createHero)
+app.post('/shirts', shirtController.createShirt)
+app.post('/shorts', shortController.createShort)
 
 app.put('/pants/:id', pantController.updatePant)
-// app.put('/villains/:id', villainController.updateVillain)
-// app.put('/heros/:id', heroController.updateHero)
+app.put('/shirts/:id', shirtController.updateShirt)
+app.put('/shorts/:id', shortController.updateShort)
 
 app.delete('/pants/:id', pantController.deletePant)
-// app.delete('/villains/:id', villainController.deleteVillain)
-// app.delete('/heros/:id', heroController.deleteHero)
-
-
-
-
-
-
-
-
-
-
+app.delete('/shirts/:id', shirtController.deleteShirt)
+app.delete('/shorts/:id', shortController.deleteShort)
 
 
 
