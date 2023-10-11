@@ -76,11 +76,15 @@ footer {
     height: 100px;
     padding: 5px
 }
-#box1 {
+#pants {
     background-image: url('https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/459707/sub/goods_459707_sub13.jpg?width=750');
     background-size: cover;
 }
-#box2 {
+#shorts {
     background-image: url('https://itizen-production.s3.amazonaws.com/uploads/image_asset/image/20402711/item-image-0.jpg');
+    background-size: cover;
+}
+#shirts {
+    background-image:url('//u-mercari-images.mercdn.net/photos/m15938459770_1.jpg?width=3840&quality=75&format=pjpg&auto=webp&_=1675468513');
     background-size: cover;
 }
