@@ -1,7 +1,7 @@
+document.addEventListener("DOMContentLoaded", function () {
 const base_Url = "http://localhost:3001/";
-const shortsContent = document.getElementById("shorts");
+const shortsContent = document.getElementById("shortsInsert");
 
-shorts.addEventListener("click", async () => {
     async function getAllShorts() {
         try {
             // Make the API request
@@ -30,4 +30,4 @@ shorts.addEventListener("click", async () => {
         }
     }
     getAllShorts();
-});
+    });
