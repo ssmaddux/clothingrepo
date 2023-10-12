@@ -6,11 +6,11 @@
      <!-- link CSS -->
     <link rel="stylesheet" href="styles.css" />
     <!-- link favcon -->
-     <link rel="icon" href="./dictionary.png" type="image/x-icon">
+     <link rel="icon" href="./favcon.png" type="image/x-icon">
     <!-- link axios -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <!-- link javaScript -->
-    <script defer src="script.js"></script>
+    <script defer src="shortsDOM.js"></script>
     <title>ClothingRepo</title>
 </head>
 
@@ -21,8 +21,8 @@
     <nav>
         <ul>
             <li><a href="index.html">Home </a></li>
-            <li><a href="contact.html">Contact </a></li>
             <li><a href="about.html">About </a></li>
+            <li><a href="contact.html">Contact </a></li>
         </ul>
     </nav>
 </header>
@@ -32,9 +32,8 @@
         <input type="text" placeholder="Type the word here..." id="inp-word"/>
         <button id="search-btn">Search</button>
     </div>
-    <div class="items">
-        <div class='item-types' id="itemDisplay">1</div>
-        <div class='item-types' id="itemDescription">2</div>
+    <div>
+        <div id="shortsInsert"></div>
     </div>
     <footer>&#169 2023 <br/><a href="contact.html">Contact Us</a><br/> ClothingRepo@gmail.com </footer>
 </body>

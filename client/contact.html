@@ -3,40 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- link CSS -->
-    <link rel="stylesheet" href="styles.css" />
-    <!-- link favcon -->
-     <link rel="icon" href="./dictionary.png" type="image/x-icon">
-    <!-- link axios -->
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <!-- link javaScript -->
-    <script defer src="script.js"></script>
-    <title>ClothingRepo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./favicon.png" type="image/x-icon">
+    <title>Contact Us - Clothing Mock E-Commerce</title>
 </head>
-
-<header>
-    <div>
-        <h1 class="title">Contact</h1>
-    </div>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home </a></li>
-            <li><a href="contact.html">Contact </a></li>
-            <li><a href="about.html">About </a></li>
-        </ul>
-    </nav>
-</header>
-
 <body>
-    <div class="search-container">
-        <input type="text" placeholder="Type the word here..." id="inp-word"/>
-        <button id="search-btn">Search</button>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="contact-form">
+        <h2>Get in Touch</h2>
+        <p>If you have any questions or feedback, please feel free to contact us:</p>
+        <form action="submit_contact_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
     </div>
-    <div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-    <footer>&#169 2023 <br/><a href="contact.html">Contact Us</a><br/> ClothingRepo@gmail.com </footer>
+
+    <footer>
+        &#169; 2023 - Clothing Mock E-Commerce
+        <br>
+        <a href="contact.html">Contact Us</a>
+        <br>
+        Email: clothingmock@example.com
+    </footer>
 </body>
 </html>
