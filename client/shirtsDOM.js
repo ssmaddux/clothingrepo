@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Display each shirtInfo object attribute
                 shirtsContent.innerHTML += 
                 `
-                    <img src="${shirtInfo.image}" alt="Shirts Image"> 
+                    <img src="${shirtInfo.image}" alt="shirts Image"> 
                     <p>Size: ${shirtInfo.size}</p>
                     <p>Color: ${shirtInfo.color}</p>
                     <p>Price: ${shirtInfo.price}</p>
