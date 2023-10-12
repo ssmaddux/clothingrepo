@@ -16,6 +16,7 @@ header {
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
+    margin-bottom: 335px;
 }
 .item-types {
     border: 1px solid black;
@@ -69,13 +70,12 @@ nav a {
 }
 footer {
     bottom: 0;
-    position: fixed;
     background-color: #0056b3;
     width: 100%;
-    left: 0;
-    height: 60px;
+    height: 50px;
     padding: 5px;
     text-align: center;
+    margin-left: 0;
 }
 #pants {
     background-image: url('https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/459707/sub/goods_459707_sub13.jpg?width=750');
@@ -95,4 +95,7 @@ footer {
 }
 #itemDescription {
     height: 400px;
+}
+img {
+    height: 150px;
 }
