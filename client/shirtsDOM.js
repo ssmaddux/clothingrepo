@@ -14,8 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Display each shirtInfo object attribute
                 shirtsContent.innerHTML += 
                 `
+                    <img src="${shirtInfo.image}" alt="Shirts Image"> 
                     <p>Size: ${shirtInfo.size}</p>
                     <p>Color: ${shirtInfo.color}</p>
+                    <p>Price: ${shirtInfo.price}</p>
                     <hr> <!-- Add a horizontal line to separate each entry -->
                 `;
             });
