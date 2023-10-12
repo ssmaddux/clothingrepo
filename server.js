@@ -5,7 +5,7 @@ const db = require('./db')
 const bodyParser = require('body-parser')
 
 // include controller name and path here
-const pantController = require('./controllers/pants.js')
+const pantController = require('./controllers/pants')
 const shirtController = require('./controllers/shirts')
 const shortController = require('./controllers/shorts')
 
