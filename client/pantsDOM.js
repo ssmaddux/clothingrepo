@@ -13,10 +13,11 @@ document.addEventListener("DOMContentLoaded", function () {
           response.data.forEach(pantsInfo => {
             // Display each pantsInfo object attribute
             pantsContent.innerHTML += 
-            `
+            `   <img src="${pantsInfo.image}" alt="Pants Image"> 
                 <p>Waist Size: ${pantsInfo.waist_size}</p>
                 <p>Length Size: ${pantsInfo.length_size}</p>
                 <p>Color: ${pantsInfo.color}</p>
+                <p>Price: ${pantsInfo.price}</p>
                 <hr> <!-- Add a horizontal line to separate each entry -->
             `;
           });

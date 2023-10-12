@@ -14,8 +14,10 @@ const shortsContent = document.getElementById("shortsInsert");
                     // Display each pantsInfo object attribute
                     shortsContent.innerHTML += 
                     `
+                        <img src="${shortsInfo.image}" alt="shorts Image"> 
                         <p>Size: ${shortsInfo.size}</p>
                         <p>Color: ${shortsInfo.color}</p>
+                        <p>Price: ${shortsInfo.price}</p>
                         <hr> <!-- Add a horizontal line to separate each entry -->
                     `;
                 });
