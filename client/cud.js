@@ -1,20 +1,3 @@
-    // const base_Url = "http://localhost:3001/";
-    // const createShirtsContent = document.getElementById("create");
-    // const shirtSizeInput = document.getElementById("size")
-    // const shirtColorInput = document.getElementById("color")
-    // const shirtPriceInput = document.getElementById("price")
-
-    // shirtsContent.addEventListener('click', async () => {
-    //     try {
-    //         const response = await axios.post(`${base_Url}shirts`);
-    //         = shirtSizeInput.innerText
-
-
-    //     } catch (error) {
-            
-    //     }
-    // })
-
 
     const baseUrl = "http://localhost:3001/";
     const createShirtsButton = document.getElementById("create")
