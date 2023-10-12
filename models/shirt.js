@@ -5,7 +5,7 @@ const shirtSchema = new Schema(
     {
         size: {type: String},
         color: {type: String},
-        image
+        image: {type: String}
     },
     {timestamps: true,}
 )
